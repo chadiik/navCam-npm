@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>NavCam</title>
+		<style>
+			body { 
+				margin: 0;
+				background-color: #000000;
+			}
+			#viewerGL {
+				position: absolute;
+				width: calc(100% - 20px);
+				height: calc(100% - 20px);
+				top: 10px;
+				left: 10px;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+	<!--
+		<script id="vertexShader" type="x-shader/x-vertex">
+			void main() {
+				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+			}
+		</script>
+		<script id="fragmentShader" type="x-shader/x-fragment">
+			void main() {
+				gl_FragColor = vec4(1, 1, 1, 1.0);
+			}
+		</script>
+	-->
+
+		<div id="viewerGL"></div>
+
+		<script src="js/lib/three/three.js"></script>
+		<script src="js/lib/three/controls/OrbitControls.js"></script>
+		<script src="js/lib/three/loaders/OBJLoader.js"></script>
+
+		<script src="bundle.js"></script>
+	</body>
+</html>
