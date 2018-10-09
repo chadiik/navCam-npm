@@ -19,8 +19,13 @@ var template = function(entry, output){
     entry: defaultEntry,
     devtool: 'source-map',
     output: defaultOutput,
+    resolve: {
+      alias: {
+        'three': path.join(__dirname, './js/lib/three/three.js'),
+      }
+    },
     plugins: [
-      
+      new webpack.ProvidePlugin({ 'THREE': 'three' })
     ]
   };
 };

@@ -1,3 +1,4 @@
+require('./lib/three/controls/OrbitControls');
 
 class FlowCamera{
     constructor(container){

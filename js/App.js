@@ -4,6 +4,8 @@ const Stats = require('./lib/stats.min');
 const Scene = require('./Scene');
 var input = require('./Input');
 
+require('./lib/three/loaders/OBJLoader');
+
 //V3d = {Navigation:{NavCam:(require('./navcam/NavCam'))}};
 require('../V3d.Navigation');
 
